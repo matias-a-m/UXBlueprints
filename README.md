@@ -1,34 +1,35 @@
-# UXBlueprints
+# SecurityKit
 
-Colección de patrones de experiencia de usuario nativa en SwiftUI.  
-Desde formularios accesibles hasta onboarding y empty states.
+Framework modular de seguridad para aplicaciones iOS.  
+Provee abstracciones para proteger datos, validar integridad del entorno y aplicar criptografía moderna.
 
 ---
 
 ## Propósito
 
-Explorar qué patrones funcionan mejor en interfaces iOS y cómo implementarlos de forma elegante y reutilizable.
+Implementar buenas prácticas de seguridad en aplicaciones nativas sin comprometer la experiencia de usuario.
 
 ---
 
-## Patrones cubiertos
+## Contenido
 
-- Formularios con validación nativa
-- Onboarding con paginación
-- Empty states interactivos
-- Confirmaciones, alertas, feedback táctil
-
----
-
-## Diseño adaptativo
-
-- Tamaño de fuente dinámico
-- Contraste accesible
-- Modos oscuro/claro
-- Composición modular
+- Encriptación simétrica/asimétrica con CryptoKit
+- Almacenamiento seguro con Keychain
+- Autenticación biométrica (Face ID / Touch ID)
+- Validación de entornos inseguros (debugger, jailbreak)
+- Manejo seguro de credenciales y tokens
 
 ---
 
-## Filosofía
+## Ejemplo
 
-Construir interfaces que respondan a los principios de diseño humano de Apple.
+```swift
+let password = "1234"
+try KeychainHelper.shared.store("user_password", value: password)
+```
+
+---
+
+## Integración
+
+Importá `SecurityKit` en cualquier capa del sistema que requiera protección de datos o autenticación segura.
