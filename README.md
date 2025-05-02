@@ -1,34 +1,52 @@
 # UXBlueprints
 
-Colección de patrones de experiencia de usuario nativa en SwiftUI.  
-Desde formularios accesibles hasta onboarding y empty states.
+**Catálogo de patrones de experiencia de usuario aplicados a SwiftUI.**
+
+`UXBlueprints` recopila patrones de interfaz nativa usados en aplicaciones reales. Sirve como referencia práctica y técnica para construir experiencias consistentes, accesibles y modernas.
 
 ---
 
 ## Propósito
 
-Explorar qué patrones funcionan mejor en interfaces iOS y cómo implementarlos de forma elegante y reutilizable.
+- Estandarizar decisiones de experiencia de usuario.
+- Servir como biblioteca de referencia para nuevos módulos.
+- Definir patrones reproducibles en SwiftUI.
 
 ---
 
-## Patrones cubiertos
+## Contenido
 
-- Formularios con validación nativa
-- Onboarding con paginación
-- Empty states interactivos
-- Confirmaciones, alertas, feedback táctil
-
----
-
-## Diseño adaptativo
-
-- Tamaño de fuente dinámico
-- Contraste accesible
-- Modos oscuro/claro
-- Composición modular
+- Composición de pantallas comunes (onboarding, formularios, listas).
+- Patrones de feedback visual y accesibilidad.
+- Casos de navegación y adaptabilidad responsiva.
+- Integración de diseño sistemático con `InterfaceKit`.
 
 ---
 
-## Filosofía
+## Pruebas
 
-Construir interfaces que respondan a los principios de diseño humano de Apple.
+| Componente     | Tipo de prueba         |
+|----------------|------------------------|
+| Vistas         | Snapshot + lógica UI   |
+| Accesibilidad  | XCTest UI              |
+| Interacciones  | Unitarias              |
+
+---
+
+## Integración
+
+`UXBlueprints` es accesible desde `ProductSuiteApp`. Puede ser utilizado como patrón base para otros módulos que requieran consistencia en la experiencia visual.
+
+---
+
+## Requisitos
+
+- iOS 15+
+- Swift 6
+- Swift Package Manager
+
+---
+
+## Licencia
+
+MIT © Matías Adrián Molina
